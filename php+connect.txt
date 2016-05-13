@@ -1,0 +1,12 @@
+<?php
+$servername = "localhost";//database server name
+$username = "username";//connect database user name
+$password = "password";//connect database password
+
+$connection = mysql_connect($servername, $username, $password); //connect database
+
+if (!$connection) {
+    die("could not connect to the database: " .mysql_connect_error());//check sucessful or not
+}
+echo "Connected successfully";
+?>
